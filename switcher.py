@@ -4,7 +4,12 @@ Fetch languages in the https://docs.python.org language switcher.
 Return a defaultdict mapping language codes to a Boolean indicating
 whether it is in the language switcher.
 """
-
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "requests",
+# ]
+# ///
 import tomllib
 from collections import defaultdict
 

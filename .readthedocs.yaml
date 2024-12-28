@@ -19,6 +19,7 @@ build:
       - asdf global uv latest
     build:
       html:
+        - uv run switcher.py
         - uv run generate.py
         - mkdir -p _readthedocs/html
         - mv index.html style.css _readthedocs/html
